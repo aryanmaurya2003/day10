@@ -1,0 +1,27 @@
+.navLink{
+display: flex;
+list-style: none;
+gap: 10px;
+color: white;
+}
+
+.navLink li {
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  color: white;
+}
+
+.whiteColor{
+  color: white;
+}
+.navLink li:hover{
+background-color: aliceblue;
+color:black;
+cursor:pointer;
+}
+.counterClass{
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
