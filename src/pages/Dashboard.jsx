@@ -1,11 +1,17 @@
+import { useContext } from 'react';
+import { LoginContext } from '../App';
 import { Outlet } from 'react-router-dom'
 import { Link, useNavigate } from 'react-router-dom'
 
 function Dashboard() {
+  const {authenticated,setauthenticated}=useContext(LoginContext)
+  console.log("authenticated",authenticated)
   const navigate = useNavigate();
   const handleLogout = () => {
     localStorage.removeItem("userAuthenticated");
-     window.location.reload()
+    setauthenticated(false)
+    alert("user is logged out" )
+    navigate('')
   }
 
 

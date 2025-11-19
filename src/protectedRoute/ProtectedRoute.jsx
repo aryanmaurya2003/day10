@@ -4,8 +4,7 @@ import React, { Children } from 'react'
 function ProtectedRoute({authenticated,children}) {
   
     if(!authenticated){
-        alert("please login first");  
-        return <Navigate to="/login"/>
+        return <Navigate to="/"/>
     }
 
 

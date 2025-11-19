@@ -8,7 +8,7 @@ function login(props) {
   useEffect(() => {
     if (props.authenticated === true) {
       console.log("user is logged in see this")
-      navigate("/");
+      navigate("/dashboard");
     }
   }, []);
 
@@ -17,7 +17,7 @@ function login(props) {
     props.setauthenticated(true);
     localStorage.setItem("userAuthenticated", true);
     console.log("user is logged in")
-    navigate("/");
+    navigate("/dashboard");
   }
 
   return (
